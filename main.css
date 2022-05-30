@@ -12,9 +12,19 @@ body {
     background-color: #404040;
 }
 
+/* this is the main one
 #networkCanvas {
     background-color: black;
+} 
+*/
+/* Modification
+#networkCanvas {
+    background-color: black;
+    position: absolute;
+    width: 0;
+    height: 0;
 }
+*/
 
 #verticalButtons {
     display: flex;
