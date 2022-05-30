@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #a9a9a9;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+#carCanvas {
+    background-color: #404040;
+}
+
+#networkCanvas {
+    background-color: black;
+}
+
+#verticalButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 100%, 16%);
+    border-radius: 10px;
+    width: 100px;
+    height: 50vh;
+    margin-top: 22vh;
+    flex-wrap: nowrap;
+}
+
+button {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    width: 60px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20%;
+    font-size: 1.9em;
+    border: none;
+}
+
+button:hover {
+    background-color: #601b1b;
+
+}
+
+button:active {
+    background-color: cyan;
+}
