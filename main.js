@@ -6,7 +6,7 @@ const carCtx = carCanvas.getContext("2d");
 const networkCtx = networkCanvas.getContext("2d");
 const road = new Road(carCanvas.width / 2, carCanvas.width * 0.9);
 const N = 1;
-
+doit();
 const cars = generateCars(N);
 const traffic = [
   new Car(road.getLaneCenter(1), 500, 30, 50, "false", 2.5),
@@ -227,6 +227,7 @@ doit();
 function discard() {
   localStorage.removeItem("bestBrain");
 }
+doit();
 
 function generateCars(N) {
   const cars = [];
@@ -235,7 +236,7 @@ function generateCars(N) {
   }
   return cars;
 }
-
+doit();
 function animate(time) {
   for (let i = 0; i < traffic.length; i++) {
     traffic[i].update(road.borders, []);
