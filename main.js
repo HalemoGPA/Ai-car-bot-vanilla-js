@@ -5,7 +5,7 @@ networkCanvas.width = 300;
 const carCtx = carCanvas.getContext("2d");
 const networkCtx = networkCanvas.getContext("2d");
 const road = new Road(carCanvas.width / 2, carCanvas.width * 0.9);
-const N = 400;
+const N = 1;
 
 const cars = generateCars(N);
 const traffic = [
@@ -140,7 +140,7 @@ if (localStorage.getItem("bestBrain")) {
   for (let i = 0; i < cars.length; i++) {
     cars[i].brain = JSON.parse(localStorage.getItem("bestBrain"));
     if (i != 0) {
-      NeuralNetwork.mutate(cars[i].brain, 0.05);
+      NeuralNetwork.mutate(cars[i].brain, 0.0);
     }
   }
 }
@@ -157,7 +157,7 @@ function discard() {
 function generateCars(N) {
   const cars = [];
   for (let i = 0; i < N; i++) {
-    cars.push(new Car(road.getLaneCenter(1), 600, 30, 50, "AI", 5));
+    cars.push(new Car(road.getLaneCenter(1), 600, 30, 50, "AI", 10));
   }
   return cars;
 }
