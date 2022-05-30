@@ -17,14 +17,14 @@ body {
     background-color: black;
 } 
 */
-/* Modification
+/* Modification */
 #networkCanvas {
     background-color: black;
     position: absolute;
     width: 0;
     height: 0;
 }
-*/
+
 
 #verticalButtons {
     display: flex;
